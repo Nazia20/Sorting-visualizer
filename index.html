@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Algorithm Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Sorting Algorithm Visualizer</h1>
+
+  <div class="controls">
+    <label>Algorithm:</label>
+    <select id="algorithm">
+      <option value="bubble">Bubble Sort</option>
+      <option value="selection">Selection Sort</option>
+      <option value="insertion">Insertion Sort</option>
+      <option value="merge">Merge Sort</option>
+      <option value="quick">Quick Sort</option>
+    </select>
+
+    <label>Size:</label>
+    <input type="range" id="size" min="10" max="80" value="40">
+
+    <label>Speed:</label>
+    <input type="range" id="speed" min="10" max="500" value="100">
+
+    <button id="generate">Generate Array</button>
+    <button id="sort">Start Sorting</button>
+  </div>
+
+  <div class="bars-container" id="bars"></div>
+
+  <!-- 🧮 Array Display -->
+  <div class="array-display">
+    <h3>Array Values:</h3>
+    <p id="arrayValues">[ ]</p>
+  </div>
+
+  <footer>
+    <p>Designed by Nazia ✨ | Sorting Visualizer</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
